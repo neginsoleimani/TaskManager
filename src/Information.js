@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import image from './images/undraw_personal_information_re_vw8a.svg'
+import image from './images/casual-life-3d-avatar-2.png'
 
 const DIV = styled.div`
+margin-top:12%;
+border-radius:30px 30px 0  0;
+background-color:#fff;
+height:93.3vh;
 
 img{
-    margin-top:70px;
-    width:250px;
+    margin-top:50px;
+    width:120px;
 }
 
 h3{
     text-align:center;
-    color:#3c78d8;
-    font-size:2rem;
-    font-family:"Calibri";
+    color:#7d8fff;
+    font-size:1.5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -43,10 +47,15 @@ input[type=text]:focus{
 
 
 button{
-    margin-top:10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+    border-radius:20px;
+    background-color:#7d8fff;
+    color:#fff;
+    width:70%;
+    font-weight:bold;
+    border:none;
+    padding:3% 5%;
+    margin-top:6%;
 }
 
 
@@ -73,9 +82,9 @@ class Information extends Component {
     constructor(){
         super();
         this.state = {
-            FirstName:"Negin",
-            LastName:"Soleimani",
-            PhoneNumber:"+989300354241"
+            FirstName:"Frist name",
+            LastName:"Last name",
+            PhoneNumber:"+98"
         }
     }
 
@@ -107,9 +116,9 @@ class Information extends Component {
                     <input  type={"text"}  value={this.state.FirstName}  onChange={this.FNHandler} />
                     <input type={"text"} value={this.state.LastName}  onChange={this.LNHandler}/>
                     <input type={"text"} value={this.state.PhoneNumber} onChange={this.PNHandler}/>
-                    <div>
+                    <center>
                     <button>Continue</button>
-                    </div>
+                    </center>
                 </DIV>
             </div>
         );
